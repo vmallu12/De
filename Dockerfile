@@ -7,22 +7,23 @@ ENV NOVNC_PORT=6080
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-    xfce4 \
-    xfce4-terminal \
-    dbus-x11 \
-    tigervnc-standalone-server \
-    tigervnc-common \
-    novnc \
-    websockify \
-    supervisor \
-    wget \
-    curl \
-    nano \
-    sudo \
-    pulseaudio \
-    pulseaudio-utils \
-    net-tools \
-    ca-certificates && \
+        xfce4 \
+        xfce4-terminal \
+        dbus-x11 \
+        tigervnc-standalone-server \
+        tigervnc-common \
+        novnc \
+        websockify \
+        supervisor \
+        sudo \
+        wget \
+        curl \
+        nano \
+        git \
+        net-tools \
+        ca-certificates \
+        pulseaudio \
+        pulseaudio-utils && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
